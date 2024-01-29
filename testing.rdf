@@ -1,0 +1,1522 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2023/11/Testing"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BelongstoSuite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BelongstoSuite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_unitTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ContainsTestCases -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ContainsTestCases">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_unitTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CoversCodeElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CoversCodeElement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestCase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#DefinesTestObjective -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#DefinesTestObjective">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDesign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestObjective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutesTestCases -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutesTestCases">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_unitTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutesTestScenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutesTestScenario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutesWhiteBoxTestScenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutesWhiteBoxTestScenario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestResult"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestSuite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#HasAssertions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#HasAssertions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Assertion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IncludesTestScenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IncludesTestScenario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDesign"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IsOfType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IsOfType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDouble"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Mock"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Stub"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PartOfCycle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PartOfCycle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_RegressionTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestCycle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PartOfTestSuite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PartOfTestSuite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PartOfWhiteBoxTestSuite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PartOfWhiteBoxTestSuite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestCase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestSuite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ReviewedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ReviewedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_unitTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestReviewer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SpecifiesInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SpecifiesInput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestObjective"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestInput"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SpecifiesOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SpecifiesOutput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestObjective"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOutput"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SpecifiesWhiteBoxTestObjective -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SpecifiesWhiteBoxTestObjective">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestSuite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestObjective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UsesChecker -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UsesChecker">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeBaselineChecker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UsesTestArtifact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UsesTestArtifact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestObjective"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SoftwareComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SystemUnderTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#analyzedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#analyzedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestCycle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionAnalysis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#assignedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#assignedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Tester"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestFeature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#executesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#executesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_RegressionTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#foundIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#foundIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Bug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestFeature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasChanges -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasChanges">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestCycle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ChangeSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_RegressionTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_RegressionTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#includeIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#includeIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Bug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestReport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#includesTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#includesTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_RegressionTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_RegressionTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#reportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#reportedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Bug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Tester"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#usesTool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#usesTool">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestCycle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_Tool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AssertionDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AssertionDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Assertion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BaselineCheckResult -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BaselineCheckResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeBaselineChecker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeCoveragePercentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeCoveragePercentage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeCoverageObjective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ComparisonMechanism -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ComparisonMechanism">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOracle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CoveragePercentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CoveragePercentage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutionLog -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutionLog">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutionLogWhite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExecutionLogWhite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceMetric -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceMetric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceObjective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ReviewComments -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ReviewComments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestReviewer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SecurityLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SecurityLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SecurityObjective"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoveragePercentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoveragePercentage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverageBlack"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDoubletype -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDoubletype">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDouble"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestEnvironmentDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestEnvironmentDetails">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestEnvironmentDetailsWhite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestEnvironmentDetailsWhite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestEnvironment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResultStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResultStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_unitTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResultStatusWhite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResultStatusWhite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#bugDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#bugDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#bugPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#bugPriority"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasDefectCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasDefectCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestCycle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasExecutionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasExecutionDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_RegressionTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasExecutionTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#hasExecutionTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_RegressionTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#reportVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#reportVersion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Tester"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#testEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#testEndDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#testStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#testStartDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#testerID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#testerID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Alpha_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Alpha_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Assertion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Assertion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedExecution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedExecution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_RegressionTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedOracle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedOracle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOracle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedTestExecution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedTestExecution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_unitTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedTestExecutionBlack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedTestExecutionBlack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedTestingTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#AutomatedTestingTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Blocked -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Blocked">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_RegressionTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BoundaryTestCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BoundaryTestCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BoundaryTestInput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BoundaryTestInput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestInput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BranchCoverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BranchCoverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BranchCoverageBlack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BranchCoverageBlack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverageBlack"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Bug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Bug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Alpha_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BugFixChangeSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BugFixChangeSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ChangeSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ChangeSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ChangeSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeBaselineChecker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeBaselineChecker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeCoverageObjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeCoverageObjective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ComponentTestCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ComponentTestCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestCase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ComponentTestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ComponentTestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestSuite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#DefectTrendAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#DefectTrendAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#DevelopmentEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#DevelopmentEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#DynamicCodeBaselineChecker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#DynamicCodeBaselineChecker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeBaselineChecker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#EqualityAssertion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#EqualityAssertion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Assertion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#EquivalenceTestInput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#EquivalenceTestInput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestInput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ErrorTestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ErrorTestResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExistenceAssertion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExistenceAssertion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Assertion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExpectedNegativeOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExpectedNegativeOutput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExpectedPositiveOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExpectedPositiveOutput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExternalTester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ExternalTester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Fail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Fail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_RegressionTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FailedTestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FailedTestResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FeatureChangeSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FeatureChangeSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ChangeSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FunctionalTestDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FunctionalTestDesign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDesign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FunctionalTestObjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FunctionalTestObjective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FunctionalityBug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#FunctionalityBug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Bug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IntegrationTestCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IntegrationTestCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestCase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IntegrationTestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IntegrationTestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_unitTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IntegrationTestSuiteWhite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#IntegrationTestSuiteWhite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestSuite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#InternalTester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#InternalTester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Tester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#MajorReleaseCycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#MajorReleaseCycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestCycle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManagerReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManagerReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestReviewer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManualExecution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManualExecution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_RegressionTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManualOracle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManualOracle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOracle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManualTestExecution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManualTestExecution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_unitTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManualTestExecutionBlack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ManualTestExecutionBlack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#MinorReleaseCycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#MinorReleaseCycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestCycle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Mock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Mock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDouble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Module">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ModuleTestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ModuleTestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_unitTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#NegativeTestCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#NegativeTestCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#NegativeTestScenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#NegativeTestScenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#NonFunctionalTestDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#NonFunctionalTestDesign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDesign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#NotExecuted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#NotExecuted">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_RegressionTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Pass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Pass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_RegressionTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PathCoverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PathCoverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PathCoverageBlack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PathCoverageBlack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverageBlack"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PeerReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PeerReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestReviewer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceBug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceBug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Bug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceObjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceObjective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceTestObjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PerformanceTestObjective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PositiveTestCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PositiveTestCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PositiveTestScenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#PositiveTestScenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ProductionEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ProductionEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ProductionEnvironmentWhite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#ProductionEnvironmentWhite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestCycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestCycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_RegressionTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestSuiteBlack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestSuiteBlack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_Tool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_Tool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SanityTestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SanityTestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SecurityObjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SecurityObjective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SoftwareComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SoftwareComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestArtifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#StagingEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#StagingEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#RegressionTestEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#StatementCoverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#StatementCoverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#StatementCoverageBlack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#StatementCoverageBlack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverageBlack"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#StaticCodeBaselineChecker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#StaticCodeBaselineChecker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#CodeBaselineChecker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Stub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Stub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDouble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SuccessfulTestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SuccessfulTestResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SystemTestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SystemTestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_unitTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SystemUnderTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#SystemUnderTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestArtifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestArtifact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestArtifact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_RegressionTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_RegressionTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCase_unitTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverageBlack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestCoverageBlack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDesign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDouble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestDouble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_RegressionTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_RegressionTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_unitTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestExecution_unitTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestFeature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Alpha_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestInput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestInput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestManagementTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestManagementTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestObjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestObjective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOracle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOracle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestOutput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestReport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Alpha_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_RegressionTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_RegressionTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_unitTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestResult_unitTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestReviewer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestReviewer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestScenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#BlackBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_RegressionTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_RegressionTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Regression_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_unitTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestSuite_unitTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Tester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Tester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Alpha_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Testing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestingEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#TestingEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UnitTestCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UnitTestCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestCase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UnitTestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UnitTestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestSuite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Unit_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UsabilityBug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#UsabilityBug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Bug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestObjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestObjective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBoxTestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBox_testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBox_testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#WhiteBox_testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/11/Testing#Testing"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
